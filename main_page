@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>try</title>
+</head>
+<body>
+    {% extends "navigation_bar.html" %}
+    {% block navigation_bar %}
+        <br>
+        <img src="image_2022-06-12_11-57-08.png" width="100px" height="50px">
+    {% endblock %}
+</body>
+</html>
