@@ -6,6 +6,10 @@ app = Flask(__name__)
 def wfw():
     return render_template("main_page.html")
 
+@app.route("/profile")
+def dsf():
+    return render_template("profile.html")
+
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
