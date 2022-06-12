@@ -1,33 +1,51 @@
 <!DOCTYPE html>
-<html>
  <head>
+    <meta charset="UTF-8">
   <title>вход</title>
   <style>
-  .figc {
-      height: 20px;
-      width: 200px;
-      text-align: center;
-      margin :100px auto;
+  form {
+  background-color: black;
+  width: 300px;
+  height: 170px;
+  text-align: center;
+  margin: 100px auto;
+  padding: 0;
+  border-radius: 20px;
   }
-  .fig {
-      height: 20px;
-      width: 200px;
-      text-align: center;
-      margin :10px auto;
+
+  label {
+  width: 20px;
+  color: white;
+  margin: 10px auto;
+  }
+
+  input {
+  width: 200px;
+  height: 20px;
+  margin: 10px auto;
+  }
+  button {
+  width: 200px;
+  height: 20px;
+  margin: 10px auto;
+  }
+  button:hover{
+  background-color: black;
+  color: white;
   }
   </style>
  </head>
- <body class="figc">
-    <form class="fig" method="POST" action="/login">
-        <label class="fig">Login</label>
-        <br>
-        <input class="fig" type="text" placeholder="Введите e-mail" name="username" required>
-        <br>
-        <label class="fig">Password</label>
-        <br>
-        <input class="fig" type="password" placeholder="Введите пароль" name="password" required>
-        <br>
+ <body>
+    <form method="POST" action="/login">
+        <label>Логин</label>
+        <br/>
+        <input type="text" placeholder="Введите e-mail" name="username" required/>
+        <br/>
+        <label>Пароль</label>
+        <br/>
+        <input type="password" placeholder="Введите пароль" name="username" required/>
+        <br/>
         <button class="fig" type="sumbit" >Вход</button>
-    </form>
+        </form>
  </body>
 </html>
