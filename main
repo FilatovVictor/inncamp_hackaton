@@ -1,7 +1,8 @@
 from flask import render_template, Flask, request, url_for
 
 app = Flask(__name__)
-
+l_z = 6
+l_all = 25
 @app.route("/")
 def wfw():
     return render_template("main_page.html")
@@ -14,9 +15,9 @@ def dsf():
 def login():
     if request.method == "POST":
         if request.form["username"] == "admin" and request.form["password"] == "admin":
-            return "Success"
+            return render_template("profile.html", name="admin", l_z=l_z, l_all=l_all)
         else:
-            return "User or password incorrect"
+            return "User or password incorrect, try again"
     else:
         return render_template("login.html")
 
@@ -24,4 +25,4 @@ def login():
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host='0.0.0.0')
