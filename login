@@ -36,14 +36,14 @@
   </style>
  </head>
  <body>
-    <form method="POST" action="/login">
+    <form method="post" action="/login">
         <label>Логин</label>
         <br/>
         <input type="text" placeholder="Введите e-mail" name="username" required/>
         <br/>
         <label>Пароль</label>
         <br/>
-        <input type="password" placeholder="Введите пароль" name="username" required/>
+        <input type="password" placeholder="Введите пароль" name="password" required/>
         <br/>
         <button class="fig" type="sumbit" >Вход</button>
         </form>
